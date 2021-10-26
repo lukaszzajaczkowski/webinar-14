@@ -58,7 +58,7 @@ public class ZadaniaDomowe extends BaseTest {
         WebElement successAlert = driver.findElement(By.id("welcome"));
         String successText = successAlert.getText();
 
-        Assert.assertTrue(successText.contains("Welcome Sai"));
+        Assert.assertTrue(successText.contains("Welcome"));
     }
 
 
