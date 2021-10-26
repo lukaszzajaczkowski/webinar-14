@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.Keys;
 
 
 public class ZadaniaDomowe extends BaseTest {
@@ -174,10 +175,10 @@ public class ZadaniaDomowe extends BaseTest {
 
 
         WebElement searchBar = driver.findElement(By.xpath("//label[text()='stanowisko, firma, słowo kluczowe']/../input"));
-        searchBar.sendKeys("tester");
+        searchBar.sendKeys("tester", Keys.ENTER);
 
         WebElement placeBar = driver.findElement(By.xpath("/html/body/main/div[1]/div/div/div[3]/form/div[1]/div[3]/div/div/input"));
-        placeBar.sendKeys("Warszawa");
+        placeBar.sendKeys("Warszawa", Keys.ENTER);
 
 
 
