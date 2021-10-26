@@ -16,5 +16,11 @@ public class ShopTests  extends BaseTest {
         Assert.assertEquals(driver.getTitle(), "Automation Sample Shop");
     }
 
+    @Test
+    public void checkHomePageUrl() {
+        driver.get("http://sampleshop.inga.pl/");
+        Assert.assertEquals(driver.getCurrentUrl(), "http://sampleshop.inga.pl/");
+    }
+
 
 }
